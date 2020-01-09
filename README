@@ -1,0 +1,23 @@
+In this project, we implement a “Find the pair” game using C++ and Qt. In our game,
+cards are illustrated by push buttons which have letters on each of them. “X” represents the
+back of the card. All cards have another letter. The same letter is placed on exactly two cards.
+Every time the game is reset, letters are distributed randomly.
+
+When a button is pressed, it will be disabled, and its letter will appear. When the sec-
+ond button is pressed, it will be checked whether the letter of current pressed button is the
+same as the previous pressed button. If so, their letters will disappear, and they will be no
+longer enabled. Also, the number of pairs and the number of tries on the top is incremented. If
+the letters of the two buttons are not the same, “X” will appear in place of the letters. They
+will again be enabled. Not the number of pairs but the number of tries will be incremented.
+
+When two cards are open, the user should not be able to click another button. To
+achieve this purpose, all buttons will be disabled when two cards are open for a second. After
+waiting one second, buttons that should be enabled will be enabled.
+
+If the user presses the “Reset” button, the game will be reset. That is, all letters will be
+distributed randomly, number of pairs and tries will be zero, all buttons will be enabled, and
+all letters will be “X”. The “Reset” button can be pressed whenever the user wants.
+
+When all pairs are found, the game should finish. So, if the number of pairs is twelve,
+the game will end, and “YOU FIND ALL THE PAIRS AFTER # TRIES” will appear in the
+middle of the screen. Here “#” is the number of tries.
